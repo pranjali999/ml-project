@@ -25,3 +25,24 @@ dist-ssr
 
 # Large downloaded crop statistics (use scripts/download_real_crop_data.py)
 backend/data/crop_production_india.csv
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+.env
+
+# Node
+node_modules/
+
+# ML Models (IMPORTANT)
+*.joblib
+*.pkl
+*.h5
+
+# OS files
+.DS_Store
+
+# Data files (optional)
+*.csv
