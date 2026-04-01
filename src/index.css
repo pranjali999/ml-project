@@ -1,0 +1,69 @@
+@import 'tailwindcss';
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'DM Sans', 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Outfit', 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #ecfdf5;
+  --color-brand-100: #d1fae5;
+  --color-brand-200: #a7f3d0;
+  --color-brand-300: #6ee7b7;
+  --color-brand-400: #34d399;
+  --color-brand-500: #10b981;
+  --color-brand-600: #059669;
+  --color-brand-700: #047857;
+  --color-brand-800: #065f46;
+  --color-brand-900: #064e3b;
+
+  --color-ocean-400: #38bdf8;
+  --color-ocean-500: #0ea5e9;
+  --color-ocean-600: #0284c7;
+
+  --shadow-glass: 0 8px 32px rgba(15, 23, 42, 0.08);
+  --shadow-float: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+  --shadow-neu: 8px 8px 20px rgba(15, 23, 42, 0.06),
+    -8px -8px 24px rgba(255, 255, 255, 0.85);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth antialiased;
+  }
+  body {
+    @apply m-0 min-h-dvh font-sans text-slate-800 bg-gradient-to-br from-emerald-50/90 via-sky-50/80 to-white;
+    font-family: var(--font-sans);
+  }
+  .dark body {
+    @apply text-slate-100 bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950;
+  }
+  #root {
+    @apply min-h-dvh;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/70 backdrop-blur-xl border border-white/40 shadow-[var(--shadow-glass)];
+  }
+  .dark .glass {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.35)];
+  }
+  .glass-strong {
+    @apply bg-white/85 backdrop-blur-2xl border border-white/50;
+  }
+  .dark .glass-strong {
+    @apply bg-slate-900/75 border-white/10;
+  }
+  .neu-surface {
+    box-shadow: var(--shadow-neu);
+    @apply bg-white/90 dark:bg-slate-900/80 rounded-2xl border border-white/30 dark:border-white/5;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r from-emerald-600 via-teal-500 to-sky-600 bg-clip-text text-transparent;
+  }
+  .dark .text-gradient {
+    @apply from-emerald-300 via-teal-300 to-sky-400;
+  }
+}
