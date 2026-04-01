@@ -1,12 +1,126 @@
-# AgriMind — AI-Powered Agricultural Decision Support System
+# 🌾 AgriMind — AI-Powered Agricultural Decision Support System
 
-Premium React frontend: predictions, dashboards, India map, explainability, chat UI, voice input, and local history — with light/dark theme and Framer Motion animations.
+AgriMind is a **full-stack intelligent decision support system** designed to help users make **data-driven agricultural and environmental decisions** using Machine Learning, real-time APIs, and interactive visualizations.
 
-## Prerequisites
+This project combines **ML models, Flask backend, and a modern React frontend** to provide **predictions, insights, and smart recommendations**.
 
-- [Node.js](https://nodejs.org/) 18+ (recommended: current LTS)
+---
 
-## Install
+## 📖 Project Overview
+
+Agriculture and environmental systems generate large amounts of data (weather, soil, crop conditions), but this data is often underutilized.
+
+AgriMind solves this by:
+
+* Processing raw data
+* Applying machine learning models
+* Generating predictions
+* Providing intelligent recommendations
+
+👉 Goal: **Assist users in making smarter, data-driven decisions**
+
+---
+
+## ❓ Problem Statement
+
+* Farmers and planners lack access to **real-time insights**
+* Raw data is difficult to interpret
+* No unified platform for:
+
+  * Prediction
+  * Visualization
+  * Decision support
+
+---
+
+## 🎯 Objective
+
+* Predict trends (e.g., crop suitability, environmental conditions)
+* Provide smart recommendations
+* Visualize insights clearly
+* Integrate multiple data sources
+
+---
+
+## ⚙️ Key Features
+
+* 🤖 Machine Learning-based prediction system
+* 📊 Interactive dashboards & charts
+* 🗺️ India map visualization (state-level insights)
+* 🧠 Explainability module (model insights)
+* 💬 Chatbot interface for interaction
+* 🎤 Voice input support
+* 🌓 Light/Dark mode UI
+* 📈 Forecasting and risk analysis
+
+---
+
+## 🏗️ Tech Stack
+
+### 🔹 Frontend
+
+* React (Vite)
+* Tailwind CSS
+* Framer Motion
+* Recharts
+* Leaflet (Maps)
+
+### 🔹 Backend
+
+* Flask (Python)
+* REST APIs
+
+### 🔹 Machine Learning
+
+* Python
+* Pandas, NumPy
+* Scikit-learn
+
+---
+
+## 🔄 How the System Works
+
+1. User inputs data (manual / voice / API)
+2. Backend processes and cleans data
+3. ML model generates predictions
+4. APIs return results
+5. Frontend displays insights visually
+
+---
+
+## 🚀 What Can Be Done Using This Project
+
+* 🌱 Crop recommendation systems
+* 🌦️ Weather-based decision support
+* 📊 Data analytics dashboards
+* 🧠 AI-based advisory systems
+* 🌍 Smart agriculture solutions
+
+---
+
+## 🧠 Why This Project is Important
+
+* Converts **data → actionable insights**
+* Helps in **real-time decision making**
+* Demonstrates **full-stack + ML integration**
+* Scalable for real-world applications
+
+---
+
+## 📂 Project Structure
+
+```bash
+MLproject/
+├── frontend/        # React frontend
+├── backend/         # Flask backend
+├── src/utils/       # Utility modules
+├── models/          # ML logic
+├── README.md
+```
+
+---
+
+## ⚙️ Installation
 
 ```bash
 cd MLproject
@@ -14,43 +128,79 @@ npm install
 cp .env.example .env
 ```
 
-Optional: set `VITE_API_BASE_URL` in `.env` (defaults to `http://127.0.0.1:8000`). Start the Flask backend from `backend/` (see `backend/README.md`).
+---
 
-## Development
+## ▶️ Development
 
 ```bash
 npm run dev
 ```
 
-Open the URL shown in the terminal (typically `http://localhost:5173`). The UI calls the API at `VITE_API_BASE_URL` (Axios, see `src/api.js`).
+---
 
-## Production build
+## 🧪 Backend
 
-```bash
-npm run build
-npm run preview
-```
-
-`preview` serves the contents of `dist/` for a local production check.
-
-## Lint
+Run Flask backend:
 
 ```bash
-npm run lint
+cd backend
+python app.py
 ```
 
-## Tech stack
+---
 
-- **Axios** (Flask API at `src/api.js`)
-- **React** + **Vite**
-- **Tailwind CSS** (v4 via `@tailwindcss/vite`)
-- **Framer Motion**
-- **Recharts**
-- **React Router**
-- **Leaflet** + **react-leaflet** (India states GeoJSON from the network; quick-pick chips work offline)
+## 🔗 API Endpoints
 
-## Notes
+* `/predict` → Prediction
+* `/forecast` → Future trends
+* `/recommend` → Suggestions
+* `/risk` → Risk analysis
+* `/chatbot` → Chat interface
+* `/explain` → Model explainability
 
-- **Predictions, dashboard charts, chat, and explainability** use the **Flask backend** (`POST /predict`, `/forecast`, `/recommend`, `/risk`, `/chatbot`, `/explain`). Run `backend/run.sh` or `python app.py` first.
-- **Voice input** uses the Web Speech API (best in Chromium-based browsers).
-- **Map** loads state boundaries over HTTPS; if the request fails, use the quick-select chips to navigate with prefilled state.
+---
+
+## 📊 Tech Stack (Frontend Focus)
+
+* Axios
+* React + Vite
+* Tailwind CSS
+* Framer Motion
+* Recharts
+* React Router
+* Leaflet
+
+---
+
+## 👩‍💻 Author
+
+**Pranjali Yeotikar**
+
+* 🎓 B.Tech (CSE - Core Branch)
+* 🔗 GitHub: https://github.com/pranjali999
+* 🔗 LinkedIn: https://www.linkedin.com/in/pranjali-yeotikar-042ab82a6
+
+---
+
+## ⭐ Key Highlights
+
+* Full-stack ML project
+* Real-time data handling
+* API integration
+* Interactive UI
+* Scalable architecture
+
+---
+
+## 🚀 Future Enhancements
+
+* Real-time IoT integration
+* Deep learning models
+* Mobile app
+* Smart notifications
+
+---
+
+## 📜 License
+
+MIT License
