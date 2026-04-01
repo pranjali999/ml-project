@@ -55,6 +55,58 @@ AgriMind solves this by:
 
 ---
 
+## 📸 Application Screenshots
+
+### 🏠 Home Interface
+
+<p align="center">
+  <img src="./screenshots/home1.png" width="45%"/>
+  <img src="./screenshots/home2.png" width="45%"/>
+</p>
+
+---
+
+### 🔮 Prediction Results
+
+<p align="center">
+  <img src="./screenshots/prediction1.png" width="30%"/>
+  <img src="./screenshots/prediction2.png" width="30%"/>
+  <img src="./screenshots/prediction3.png" width="30%"/>
+</p>
+
+---
+
+### 📊 Dashboard & Analytics
+
+<p align="center">
+  <img src="./screenshots/dashboard.png" width="60%"/>
+</p>
+
+---
+
+### 🗺️ Map Visualization
+
+<p align="center">
+  <img src="./screenshots/map.png" width="60%"/>
+</p>
+
+---
+
+### 🗄️ Data Storage / Backend
+
+<p align="center">
+  <img src="./screenshots/datastore.png" width="60%"/>
+</p>
+
+---
+
+### 💬 Chatbot Interface
+
+<p align="center">
+  <img src="./screenshots/chatbot.png" width="60%"/>
+</p>
+
+
 ## 🏗️ Tech Stack
 
 ### 🔹 Frontend
