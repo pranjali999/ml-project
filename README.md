@@ -1,4 +1,4 @@
-# 🌾 AgriMind — AI-Powered Agricultural Decision Support System
+# 🌾 KrishiAI:An Intelligent Crop Yield Prediction and Recommendation System
 
 AgriMind is a **full-stack intelligent decision support system** designed to help users make **data-driven agricultural and environmental decisions** using Machine Learning, real-time APIs, and interactive visualizations.
 
